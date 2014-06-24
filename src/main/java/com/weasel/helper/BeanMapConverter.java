@@ -1,7 +1,7 @@
 /**
  * BeanMapConverter.java
  */
-package com.weasel.lang.helper;
+package com.weasel.helper;
 
 import java.beans.PropertyDescriptor;
 import java.lang.reflect.Field;
@@ -14,8 +14,9 @@ import org.apache.commons.lang.StringUtils;
 
 import com.google.common.base.Predicate;
 import com.google.common.collect.Maps;
-import com.weasel.lang.annotation.FieldAlias;
-import com.weasel.lang.exception.TransformException;
+import com.weasel.core.annotation.FieldAlias;
+import com.weasel.core.exception.TransformException;
+import com.weasel.core.helper.GodHands;
 
 /**
  * map类型与javaBean之间的转换

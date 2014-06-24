@@ -1,4 +1,4 @@
-package com.weasel.lang.helper;
+package com.weasel.helper;
 
 import java.util.Properties;
 

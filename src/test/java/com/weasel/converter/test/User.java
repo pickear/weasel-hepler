@@ -1,4 +1,4 @@
-package com.weasel.core.helper.test;
+package com.weasel.converter.test;
 
 public class User {
 

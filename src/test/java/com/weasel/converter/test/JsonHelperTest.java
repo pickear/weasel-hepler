@@ -1,6 +1,6 @@
-package com.weasel.core.helper.test;
+package com.weasel.converter.test;
 
-import com.weasel.lang.helper.JsonHelper;
+import com.weasel.helper.JsonHelper;
 
 public class JsonHelperTest {
 

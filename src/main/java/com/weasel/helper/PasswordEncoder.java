@@ -1,7 +1,9 @@
-package com.weasel.lang.helper;
+package com.weasel.helper;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+
+import com.weasel.core.helper.DemonPredict;
 
 
 /**

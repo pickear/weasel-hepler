@@ -1,4 +1,4 @@
-package com.weasel.lang.helper;
+package com.weasel.helper;
 
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver;

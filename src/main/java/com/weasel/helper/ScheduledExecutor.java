@@ -1,4 +1,4 @@
-package com.weasel.lang.helper;
+package com.weasel.helper;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;

@@ -1,6 +1,6 @@
-package com.weasel.core.helper.test;
+package com.weasel.converter.test;
 
-import com.weasel.lang.helper.DocumentConverter;
+import com.weasel.helper.DocumentConverter;
 
 public class DocumentConverterTest {
 
