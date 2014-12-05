@@ -12,21 +12,27 @@ public class StringHelper {
 	
 	/**
 	 * 
-	 * @param message
-	 * @param values
+	 * @param message such as : "i am {},i am {}"
+	 * @param values such as :"dylan","good"
 	 * @return
 	 */
 	public static String format(String message,String... values){
 		StringBuffer buffer = new StringBuffer(message);
+		int index = 0;
+		int begin = 0;
+		int end = 0;
 		for(int i=0;i<=buffer.lastIndexOf("{");){
-			int begin = buffer.indexOf("{", i);
-			int end = buffer.indexOf("}", begin);
-			String beReplace = buffer.substring(begin+1, end);
-			String Replaced = values[Integer.valueOf(beReplace)];
-			buffer.replace(begin+1, end, Replaced);
+			if(index < values.length){
+				begin = buffer.indexOf("{", i);
+				end = buffer.indexOf("}", begin);
+				String replaced = values[index];
+				buffer.replace(begin, end, replaced);
+			}
 			i=++begin;
+			index++;
 			
 		}
-		return buffer.toString().replace('{', '【').replace('}', '】');
+		
+		return buffer.toString().replaceAll("\\{|\\}", "");
 	}
 }
